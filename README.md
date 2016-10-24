@@ -3,20 +3,20 @@
 [![npm version](https://badge.fury.io/js/small-request.svg)](https://badge.fury.io/js/small-request) [![Build Status](https://travis-ci.org/tonybadguy/small-request.svg?branch=master)](https://travis-ci.org/tonybadguy/small-request) [![codecov](https://codecov.io/gh/tonybadguy/small-request/branch/master/graph/badge.svg)](https://codecov.io/gh/tonybadguy/small-request) [![bitHound Overall Score](https://www.bithound.io/github/tonybadguy/small-request/badges/score.svg)](https://www.bithound.io/github/tonybadguy/small-request)
 
 This Node.js module is a thin wrapper around the Node.js http/https request functions that provides:
-* a Promise interface
-* handling of response chunking
-* auto-selection of the http/https request function
+* A Promise interface
+* Handling of response chunking
+* Auto-selection of the http/https request function
 
 The promise is resolved when:
-* a response is received from the server regardless of status code
+* A response is received from the server regardless of status code
 
 The promise is rejected when:
-* any other exception is encountered
+* Any other exception is encountered
 
 ## Example usage:
 
 ```
-const request = require('simple-request');
+const request = require('small-request');
 
 request.send({
   url: 'https://httpbin.org/get'
