@@ -21,7 +21,7 @@ const request = require('simple-request');
 request.send({
   url: 'https://httpbin.org/get'
 }).then(response => {
-  console.log(response.data);
+  console.log(response.body);
 });
 ```
 
